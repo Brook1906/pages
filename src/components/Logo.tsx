@@ -3,7 +3,6 @@ import React from 'react';
 interface LogoProps {
   className?: string;
 }
-
 const Logo: React.FC<LogoProps> = ({ className = "" }) => {
   return (
     <div className={`flex items-center ${className}`}>
@@ -30,6 +29,10 @@ const Logo: React.FC<LogoProps> = ({ className = "" }) => {
       <span className="text-xl font-bold text-accounting-dark">Ascend</span>
     </div>
   );
+
+// Empty Logo component that doesn't render anything
+const Logo: React.FC<LogoProps> = ({ className = "" }) => {
+  return null;
 };
 
 export default Logo;
